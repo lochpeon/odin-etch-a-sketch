@@ -1,0 +1,26 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;   
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+main {
+    display: flex;
+    flex-wrap: wrap;
+    max-width: 90%;
+    max-height: 90%;
+    border: 1px solid black;
+}
+
+.piece {
+    flex: 0 1 6.25%;
+    aspect-ratio: 1 / 1;
+    border: inherit;
+}
