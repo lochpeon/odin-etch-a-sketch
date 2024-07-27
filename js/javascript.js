@@ -1,4 +1,5 @@
 const canvas = document.querySelector("main");
+const btn = document.querySelector(".grid-reset");
 
 for(let i = 0; i < 256; i++) {
     const piece = document.createElement("div");
@@ -12,8 +13,9 @@ canvas.addEventListener("mouseenter", () => {
 
     canvasPiece.forEach((piece) => {
         piece.addEventListener("mouseenter", () => {
-            console.log("hovered");
             piece.classList.add("hovered");
         });
     }); 
+
+    btn.classList.remove("invisible");
 });
