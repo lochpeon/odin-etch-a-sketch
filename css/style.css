@@ -24,3 +24,7 @@ main {
     aspect-ratio: 1 / 1;
     border: inherit;
 }
+
+.hovered {
+    background-color: black;
+}
