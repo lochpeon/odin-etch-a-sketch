@@ -25,12 +25,24 @@ function removeCanvas() {
     });
 }
 
+function getRandomNum() {
+    return Math.floor(Math.random() * 255);
+}
+
+function getRandomColor() {
+    let r = getRandomNum();
+    let g = getRandomNum();
+    let b = getRandomNum();
+
+    return `rgb(${r}, ${g}, ${b})`;
+}
+
 canvas.addEventListener("mouseenter", () => {
     const canvasPiece = document.querySelectorAll("div");
 
     canvasPiece.forEach((piece) => {
         piece.addEventListener("mouseenter", () => {
-            piece.classList.add("hovered");
+            piece.style.backgroundColor = getRandomColor();
         });
     }); 
 
