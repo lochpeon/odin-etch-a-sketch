@@ -1,4 +1,4 @@
-const canvas = document.querySelector("main");
+const canvas = document.querySelector("section");
 const btn = document.querySelector(".grid-reset");
 
 function createCanvas(sides) {

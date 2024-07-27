@@ -1,4 +1,5 @@
 :root {
+    --midnight: #1f2937;
     --proportion: '----';
 }
 
@@ -9,22 +10,47 @@
     font-family: Roboto, sans-serif;
 }
 
-body {
+nav {
+    background-color: var(--midnight);
     display: flex;
     justify-content: center;
+    padding: 8px;
+}
+
+nav > * {
+    max-width: 800px;
+    width: 100%;
+}
+
+ul {
+    list-style-type: none;
+
+    display: flex;
+    justify-content: flex-end;
     align-items: center;
-    min-height: 100vh;
+    gap: 24px;
+}
+
+.logo {
+    color: white;
+    margin-right: auto;
+    font-size: 24px;
+    font-weight: bold;
 }
 
 .grid-reset {
-    background-color: black;
-    color: white;
-    border: none;
+    background-color: white;
+    color: var(--midnight);
+    border: 2px solid white;
     border-radius: 5px;
-    position: fixed;
-    top: 0;
     margin: 4px 0;
     padding: 8px 12px;
+}
+
+.grid-reset:hover {
+    cursor: pointer;
+    background-color: inherit;
+    color: white;
 }
 
 .invisible {
@@ -32,6 +58,13 @@ body {
 }
 
 main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 90vh;
+}
+
+section {
     display: flex;
     flex-wrap: wrap;
     width: 45vw;
